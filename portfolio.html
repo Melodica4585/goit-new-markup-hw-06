@@ -7,50 +7,56 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles-mob.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Portfolio</title>
 </head>
 <body>
     
     <!-- Header -->
     <header>
-        <div class="container">
+        <div class="container-header container">
         <nav class="navigation">
             <div class="header-nav">
-            <a class="logo" href="./index.html">
-                <span class="logo_start">WEB</span>STUDIO
-            </a>
-            <ul class="nav-links">
-                <li>
-                    <a class="nav-link" href="./index.html">Studio</a>
-                </li>
-                <li>
-                    <a class="nav-link active" href="">Portfolio</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="">Contacts</a>
-                </li>
-            </ul>
-        </div>
+                <a class="logo header" href="#">
+                    <span class="logo_start">WEB</span>STUDIO
+                </a>
+                <ul class="nav-links">
+                    <li>
+                        <a class="nav-link" href="./index.html">Studio</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active" href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <ul class="contacts">
             <li>
                 <a class="contacts mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li>
-                <a class="contacts phone" href="tel:+11 (000) 111-11-11">+11 (000) 111-11-11</a>
+                <a class="contacts phone" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
             </li>
         </ul>
-    </nav>
-    </div>
+
+        <button class="menu-toggle js-open-menu style-menu" aria-expanded="true" aria-controls="mobile-menu">
+            <svg class="menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+            </svg>
+        </button>
+        </div>
     </header>
 
     <main>
     <!-- Filter -->
-    <section class="filter">
+    <section class="projects">
     <div class="container">
-    <ul class="filter-list">
         <h2 class="visually-hidden">Filter</h2>
+    <ul class="filter-list">
         <li>
             <button class="btn-filter" type="button">All</button>
         </li>
@@ -67,22 +73,23 @@
             <button class="btn-filter" type="button">Marketing</button>
         </li>
     </ul>
-    </div>
-</section>
 
     <!-- Projects -->
-    <section class="projects">
-    <div class="container">
         <h2 class="visually-hidden">Projects</h2>
     <ul class="project-list">
         <li class="project-list_item">
             <a class="project-list_link" href="#">
                 <div class="project-overlay">
-                    <img src="./images/project-1.jpg" alt="banking app" width="360">
+                    <img 
+                    class="img-overlay" 
+                    srcset="./images/project-2.jpg 1x, ./images/project-2@2x.jpg 2x"
+                    src="./images/project-2.jpg" 
+                    alt="banking app" 
+                    width="360">
                     <p class="project-details">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
             <div class="project-description">
-                <h3>Banking App Interface Concept</h3>
+                <h3 class="project-title">Banking App Interface Concept</h3>
                 <p>App</p>
             </div>
             </a>
@@ -91,11 +98,16 @@
         <li class="project-list_item">
             <a class="project-list_link" href="#">
                 <div class="project-overlay">
-                    <img src="./images/project-2.jpg" alt="cashless" width="360">
+                    <img 
+                    class="img-overlay" 
+                    srcset="./images/project-3.jpg 1x, ./images/project-3@2x.jpg 2x"
+                    src="./images/project-3.jpg" 
+                    alt="cashless" 
+                    width="360">
                     <p class="project-details">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
             <div class="project-description">
-                <h3>Cashless Payment</h3>
+                <h3 class="project-title">Cashless Payment</h3>
                 <p>Marketing</p>
             </div>
             </a>
@@ -104,11 +116,16 @@
         <li class="project-list_item">
             <a class="project-list_link" href="#">
                 <div class="project-overlay">
-                    <img src="./images/project-3.jpg" alt="meditation app" width="360">
+                    <img 
+                    class="img-overlay" 
+                    srcset="./images/project-4.jpg 1x, ./images/project-4@2x.jpg 2x"
+                    src="./images/project-4.jpg" 
+                    alt="meditation app" 
+                    width="360">
                     <p class="project-details">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
             <div class="project-description">
-                <h3>Meditation App</h3>
+                <h3 class="project-title">Meditation App</h3>
                 <p>App</p>
             </div>
             </a>
@@ -117,11 +134,16 @@
         <li class="project-list_item">
             <a class="project-list_link" href="#">
                 <div class="project-overlay">
-                    <img src="./images/project-4.jpg" alt="taxi" width="360">
+                    <img 
+                    class="img-overlay" 
+                    srcset="./images/project-5.jpg 1x, ./images/project-5@2x.jpg 2x"
+                    src="./images/project-5.jpg" 
+                    alt="taxi" 
+                    width="360">
                     <p class="project-details">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
             <div class="project-description">
-                <h3>Taxi Service</h3>
+                <h3 class="project-title">Taxi Service</h3>
                 <p>Marketing</p>
             </div>
             </a>
@@ -130,11 +152,15 @@
         <li class="project-list_item">
             <a class="project-list_link" href="#">
                 <div class="project-overlay">
-                    <img src="./images/project-5.jpg" alt="illustrations" width="360">
+                    <img class="img-overlay" 
+                    srcset="./images/project-6.jpg 1x, ./images/project-6@2x.jpg 2x"
+                    src="./images/project-6.jpg" 
+                    alt="illustrations" 
+                    width="360">
                     <p class="project-details">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
             <div class="project-description">
-                <h3>Screen Illustrations</h3>
+                <h3 class="project-title">Screen Illustrations</h3>
                 <p>Design</p>
             </div>
             </a>
@@ -143,11 +169,15 @@
         <li class="project-list_item">
             <a class="project-list_link" href="#">
                 <div class="project-overlay">
-                    <img src="./images/project-6.jpg" alt="courses" width="360">
+                    <img class="img-overlay" 
+                    srcset="./images/project-7.jpg 1x, ./images/project-7@2x.jpg 2x"
+                    src="./images/project-7.jpg" 
+                    alt="courses" 
+                    width="360">
                     <p class="project-details">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
             <div class="project-description">
-                <h3>Online Courses</h3>
+                <h3 class="project-title">Online Courses</h3>
                 <p>Marketing</p>
             </div>
             </a>
@@ -156,11 +186,16 @@
         <li class="project-list_item">
             <a class="project-list_link" href="#">
                 <div class="project-overlay">
-                    <img src="./images/project-7.jpg" alt="stories" width="360">
+                    <img 
+                    class="img-overlay" 
+                    srcset="./images/project-8.jpg 1x, ./images/project-8@2x.jpg 2x"
+                    src="./images/project-8.jpg" 
+                    alt="stories" 
+                    width="360">
                     <p class="project-details">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
             <div class="project-description">
-                <h3>Instagram Stories Concept</h3>
+                <h3 class="project-title">Instagram Stories Concept</h3>
                 <p>Design</p>
             </div>
             </a>
@@ -169,11 +204,16 @@
         <li class="project-list_item">
             <a class="project-list_link" href="#">
                 <div class="project-overlay">
-                    <img src="./images/project-8.jpg" alt="food" width="360">
+                    <img 
+                    class="img-overlay" 
+                    srcset="./images/project-9.jpg 1x, ./images/project-9@2x.jpg 2x"
+                    src="./images/project-9.jpg" 
+                    alt="food" 
+                    width="360">
                     <p class="project-details">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
             <div class="project-description">
-                <h3>Organic Food</h3>
+                <h3 class="project-title">Organic Food</h3>
                 <p>Web Site</p>
             </div>
             </a>
@@ -182,11 +222,15 @@
         <li class="project-list_item"> 
             <a class="project-list_link" href="#">
                 <div class="project-overlay">
-                    <img src="./images/project-9.jpg" alt="coffee" width="360">
+                    <img class="img-overlay" 
+                    srcset="./images/project-1.jpg 1x, ./images/project-1@2x.jpg 2x"
+                    src="./images/project-1.jpg" 
+                    alt="coffee" 
+                    width="360">
                     <p class="project-details">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
         <div class="project-description">
-                <h3>Fresh Coffee</h3>
+                <h3 class="project-title">Fresh Coffee</h3>
                 <p>Web Site</p>
             </div>
             </a>
@@ -199,7 +243,7 @@
     <!-- Footer -->
 
     <footer>
-        <div class="container">
+        <div class="container-footer container">
             <div class="footer-wrapper">
                 <div class="footer-description">
             <a class="logo" href="./index.html">
@@ -211,7 +255,7 @@
             </div>
 
             <div class="footer-socials">
-                <h4>Social media</h4>
+                <h4 class="footer-socials_name">Social media</h4>
             <ul class="footer-links">
                 <li class="footer-links_item">
                     <a class="footer-link" href="https://instagram.com/">
@@ -248,10 +292,10 @@
         </div>
         <form class="form-footer">
 
-            <h4>Subscribe</h4>
+            <h4 class="subscription">Subscribe</h4>
 
             <div class="form-flex">
-            <label>
+            <label class="form-label">
                 <input 
                 class="form-input" 
                 type="email" 
@@ -269,5 +313,73 @@
         </div>
         </div>
     </footer>
+
+    <!-- Mobile Menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="close-modal js-close-menu" data-modal-close type="button">
+            <svg class="close-btn-modal" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
+            </svg>
+        </button>
+
+        <ul class="mobile-menu">
+            <li class="mobile-menu_item">
+                <a class="mobile-menu_link active" href="#">Studio</a>
+            </li>
+            <li class="mobile-menu_item">
+                <a class="mobile-menu_link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu_item">
+                <a class="mobile-menu_link" href="#">Contacts</a>
+            </li>
+        </ul>
+
+        <ul class="mobile-menu-contacts">
+            <li>
+                <a class="mobile-menu-phone" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+            </li>
+            <li>
+                <a class="mobile-menu-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+
+        <ul class="header-links"> 
+            <li class="header-links_item">
+                <a class="header-link" href="https://instagram.com/">
+                    <svg class="header-link_icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                </a>
+            </li>
+    
+            <li class="header-links_item">
+                <a class="header-link" href="https://twitter.com/">
+                    <svg class="header-link_icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                </a>
+            </li>
+    
+            <li class="header-links_item">
+                <a class="header-link" href="https://facebook.com/">
+                    <svg class="header-link_icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                </a>
+            </li>
+    
+            <li class="header-links_item">
+                <a class="header-link" href="https://linkedin.com/">
+                    <svg class="header-link_icon" width="24" height="40">
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    <script src="./mobile-menu.js"></script>
 </body>
 </html>
