@@ -324,7 +324,7 @@ screen and (min-resolution: 2dppx) {
 
 .features-title {
     font-size: 36px;
-    margin: 8px;
+    margin-bottom: 8px;
     text-align: center;
 }
 
@@ -1122,6 +1122,10 @@ fill: var(--footer-text-color);
         gap: 24px;
     }
 
+    .features-list_item {
+        width: calc((100% - 24px) / 4);
+    }
+
     .features-title {
         font-size: 20px;
         text-align: start;
@@ -1162,7 +1166,7 @@ fill: var(--footer-text-color);
     }
 
     .team-list_item {
-        width: calc((100% - 24px) / 2);
+        width: calc((100% - 24px) / 4);
     }
 
     .customer-list {
