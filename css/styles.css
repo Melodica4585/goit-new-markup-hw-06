@@ -142,7 +142,6 @@ h4 {
     color: var(--secondary-text-color);
 }
 
-
 /* Header */
 
 header {
@@ -235,6 +234,10 @@ header {
     line-height: 1.11;
     text-transform: capitalize;
     color: var(--secondary-text-color);
+}
+
+.mobile-menu_link.active {
+    color: var(--btn-hover-color);
 }
 
 .mobile-menu-mail {
@@ -865,6 +868,7 @@ fill: var(--footer-text-color);
     padding: 8px 16px;
     font-weight: 500;
     color: var(--btn-color);
+    cursor: pointer;
 
     border-radius: 4px;
     border: 1px solid var(--border-color);
